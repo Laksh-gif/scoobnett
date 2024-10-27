@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap");
+@import "compass/css3";
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+  --glow-color: hsl(186 100% 69%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroundColor: (246, 241, 209);
+  --colorShadeA: rgb(106, 163, 137);
+  --colorShadeB: rgb(121, 186, 156);
+  --colorShadeC: rgb(150, 232, 195);
+  --colorShadeD: rgb(187, 232, 211);
+  --colorShadeE: rgb(205, 255, 232);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(images/al.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 400px;
+  width: 1000px;
+  border: 3px solid #21ef80;
+  border-radius: 25px;
+}
+
+.retro-text {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 175px;
+  margin-top: 10px;
+}
+
+.star {
+  width: 123px;
+  height: 74px;
+  background-image: url("images/UIUX.png");
+  background-size: cover;
+  position: absolute;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.star:nth-child(1) {
+  animation: bounce 1.5s ease-in-out infinite;
+  top: 32%;
+  left: 7%;
+}
+
+.star:nth-child(2) {
+  animation: bounce 2s ease-in-out infinite;
+  top: 40%;
+  left: 10%;
+}
+
+.star:nth-child(3) {
+  animation: bounce 2.5s ease-in-out infinite;
+  top: 32%;
+  right: 7%;
+}
+
+.star:nth-child(4) {
+  animation: bounce 3s ease-in-out infinite;
+  top: 40%;
+  right: 10%;
+}
